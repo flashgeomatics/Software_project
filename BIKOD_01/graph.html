@@ -1,0 +1,87 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.2.0.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.2.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="bd986bc2-3f7c-43c8-974f-24df38298e1a" data-root-id="1046"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1119">
+          {"df9151ae-70af-41d4-a127-fb1fd652ffbc":{"roots":{"references":[{"attributes":{},"id":"1024","type":"WheelZoomTool"},{"attributes":{"data_source":{"id":"1001","type":"ColumnDataSource"},"glyph":{"id":"1037","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1038","type":"VBar"},"selection_glyph":null,"view":{"id":"1040","type":"CDSView"}},"id":"1039","type":"GlyphRenderer"},{"attributes":{},"id":"1053","type":"UnionRenderers"},{"attributes":{"overlay":{"id":"1054","type":"BoxAnnotation"}},"id":"1025","type":"BoxZoomTool"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1054","type":"BoxAnnotation"},{"attributes":{},"id":"1026","type":"SaveTool"},{"attributes":{"callback":null},"id":"1007","type":"DataRange1d"},{"attributes":{},"id":"1009","type":"LinearScale"},{"attributes":{"callback":null,"data":{"x":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],"y":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,3.0,12.0,12.0,12.0,15.0,14.0,14.0,14.0,14.0,12.0,12.0,12.0,12.0]},"selected":{"id":"1052","type":"Selection"},"selection_policy":{"id":"1053","type":"UnionRenderers"}},"id":"1001","type":"ColumnDataSource"},{"attributes":{},"id":"1027","type":"ResetTool"},{"attributes":{},"id":"1028","type":"HelpTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"y"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1038","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1023","type":"PanTool"},{"id":"1024","type":"WheelZoomTool"},{"id":"1025","type":"BoxZoomTool"},{"id":"1026","type":"SaveTool"},{"id":"1027","type":"ResetTool"},{"id":"1028","type":"HelpTool"}]},"id":"1029","type":"Toolbar"},{"attributes":{"callback":null,"end":24,"start":1},"id":"1005","type":"Range1d"},{"attributes":{"callback":null,"options":["Station index","Station 1","Station 2","Station 3","Station 4","Station 5","Station 6","Station 7","Station 8","Station 9","Station 10","Station 11","Station 12","Station 13","Station 14","Station 15","Station 16","Station 17","Station 18","Station 19","Station 20","Station 21","Station 22","Station 23","Station 24","Station 25","Station 26","Station 27","Station 28","Station 29","Station 30","Station 32","Station 33","Station 34","Station 35","Station 36","Station 37","Station 38","Station 39","Station 40","Station 41","Station 42","Station 43","Station 44","Station 45","Station 46","Station 47","Station 48","Station 49","Station 50","Station 51","Station 52","Station 53","Station 54","Station 55","Station 56","Station 57","Station 58","Station 59","Station 60","Station 61","Station 62"],"title":"Select a station","value":"Station 1"},"id":"1041","type":"Select"},{"attributes":{"below":[{"id":"1013","type":"LinearAxis"}],"center":[{"id":"1017","type":"Grid"},{"id":"1022","type":"Grid"}],"left":[{"id":"1018","type":"LinearAxis"}],"renderers":[{"id":"1039","type":"GlyphRenderer"}],"title":{"id":"1003","type":"Title"},"toolbar":{"id":"1029","type":"Toolbar"},"x_range":{"id":"1005","type":"Range1d"},"x_scale":{"id":"1009","type":"LinearScale"},"y_range":{"id":"1007","type":"DataRange1d"},"y_scale":{"id":"1011","type":"LinearScale"}},"id":"1002","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"options":["January","February","March","April","May","June","July","August","September","October","November","December"],"title":"Select a month","value":"1"},"id":"1042","type":"Select"},{"attributes":{"text":"Daily # of bikes in the station ","text_color":{"value":"black"},"text_font_size":{"value":"15pt"}},"id":"1003","type":"Title"},{"attributes":{"axis_label":"Time(hours)","formatter":{"id":"1051","type":"BasicTickFormatter"},"ticker":{"id":"1014","type":"BasicTicker"}},"id":"1013","type":"LinearAxis"},{"attributes":{"callback":null,"options":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"],"title":"Select a day","value":"1"},"id":"1043","type":"Select"},{"attributes":{},"id":"1011","type":"LinearScale"},{"attributes":{"children":[{"id":"1041","type":"Select"},{"id":"1042","type":"Select"},{"id":"1043","type":"Select"}]},"id":"1044","type":"Column"},{"attributes":{},"id":"1014","type":"BasicTicker"},{"attributes":{"children":[{"id":"1044","type":"Column"},{"id":"1002","subtype":"Figure","type":"Plot"}]},"id":"1045","type":"Row"},{"attributes":{"children":[{"id":"1045","type":"Row"}]},"id":"1046","type":"Column"},{"attributes":{"ticker":{"id":"1014","type":"BasicTicker"}},"id":"1017","type":"Grid"},{"attributes":{"axis_label":"# of bikes","formatter":{"id":"1049","type":"BasicTickFormatter"},"ticker":{"id":"1019","type":"BasicTicker"}},"id":"1018","type":"LinearAxis"},{"attributes":{},"id":"1052","type":"Selection"},{"attributes":{},"id":"1023","type":"PanTool"},{"attributes":{},"id":"1019","type":"BasicTicker"},{"attributes":{"dimension":1,"ticker":{"id":"1019","type":"BasicTicker"}},"id":"1022","type":"Grid"},{"attributes":{"fill_color":{"value":"red"},"line_color":{"value":"red"},"top":{"field":"y"},"width":{"value":0.6},"x":{"field":"x"}},"id":"1037","type":"VBar"},{"attributes":{},"id":"1049","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"1001","type":"ColumnDataSource"}},"id":"1040","type":"CDSView"},{"attributes":{},"id":"1051","type":"BasicTickFormatter"}],"root_ids":["1046"]},"title":"Bokeh Application","version":"1.2.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1119').textContent;
+                  var render_items = [{"docid":"df9151ae-70af-41d4-a127-fb1fd652ffbc","roots":{"1046":"bd986bc2-3f7c-43c8-974f-24df38298e1a"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
