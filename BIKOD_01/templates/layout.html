@@ -43,13 +43,13 @@
 						</nav>
 					</header>
 					<!-- main diviation with snipper style -->
-					<main role="main" class="container">
+					<main role="main" class="container"  >
 						<div class="row">
-							<div class="col-md-8">
+							<div class="col-md-8" style= "border-top-width: 50px; top:65px">
 								{% with messages = get_flashed_messages(with_categories=true) %}
 								{% if messages %}
 								{% for category, message in messages %}
-								<div class="alert alert-{{ category }}">
+								<div class="alert alert-{{ category }}" style= "border-top-width: 0px; top:65px;padding-top: 0px;padding-bottom: 0px;">
 									{{ message }}
 								</div>
 								{% endfor %}
