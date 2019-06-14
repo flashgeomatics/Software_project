@@ -1,0 +1,107 @@
+the best way is to  have template directory in our project  so to do that we have to make a folder called templates in our project folder
+ lets add some  dommy data to our file to see what will happend
+ post is list of dictionarries
+________________________________________||||||||||||||||||
+ list
+
+ [,  ,], mutable  so it can be change 
+
+ tuble
+(), tubles are immutables means u cant change in it
+
+
+ set 
+
+ set1=set[()] the out put is in{}
+
+ dictionaries
+ made of key_value pairs { the key :"the value"} the key is immutable but the value  is mutable 
+
+ ________________________________________||||||||||||||||||
+
+
+ the template that flask use is  jinja  2 and allows us to  write ti withen our template  so to do our block we can do it  with for loop 
+  {% for post in post%} and  to end the for loop {% end for %} with this we run post at time
+
+  To call  a variable we  type {{post.title}}
+
+ as we did the foor loop we can also make  an if  else condition 
+ {% if title %}
+	<title>Flask Blog - {{ title }}</title>
+	{% else %}
+	<title>Flask Blog</title>
+	{% endif %}
+_______________________________________________________________________________________________________________
+
+Due to the repitation in the html file templates  cause if  i want to update i have to update  every single file which is not  good to do
+ so use template inheretance  to do this :
+
+1-  creat a new html file and  u copy and paste  the comman section of the  html and we call it the parent  file
+2-  in  this  parent file we  creat a block  which the child  template  can overwrite  to do this  {%block content%} {%end block%}  note block is the name  of the block
+3-  in each child  template remove the comman section   
+4- at the top of each layer we right the key  extend  {%extends%"parenttemplatename.html"}
+after that we type {%block name of the block%} and  at the  end {%endblock name of the block%} 
+_______________________________________________________________________________________________--_-_----------_----
+
+bootstrap library to add style add it  from
+
+there is  an extention called flask bootstrap
+____________________________________________________________________________________________________________________
+
+snippets
+
+adding navigation bars using   snippets  use navigation.html
+ new main section
+
+ css and js for our work must be in static folder
+ to add ur css file we use (url_for) function will find the exact location of the rute of the file and it will be in the pythion code
+_____________________________________________________________________________________________________________________________________
+ make a  regesteration page
+ the extenstion we can use  wtf forms  for log in 
+
+ ____________________________________________________________________________________
+ flash(f'Account Created for {form.username.data}!', 'success')   # flash kmessage is to one time alert, 
+ f for passing string  flask has two variable   and as we will use bootstrap to give  the message to we will call it  successs as the second argument for the allert massege we used  flash function  and 
+  no we redirect the user for  another page   so we  direct  the user to home page using  function  redirect
+
+now we  have to update our template to accept the flash message 
+
+with_categories=true we can  allow grap the sucesss  message  in flash in bootstrap
+
+for  blocks {%%}
+
+<!-- if we have message odispaly--><!-- we will get two values from this messages-- >
+							<!-- if we say success  so it will be alert-- >
+note that the flash messages are one time alert 
+________________________________________________
+
+we need to have  to give afeed back  of the error we have 
+ in the registeration  each  field have a list of error we need to print it  out  once  it happend
+
+
+
+
+
+ welcome 
+  home 
+  about 
+  admin st 
+
+   _____________________________________________________________________
+   <!--    user name 
+        <div class="form-group">
+          {{ form.username.label(class="form-control-label") }} 
+                                           
+                    {% if form.username.errors %}
+                      {{ form.username(class="form-control form-control-lg is-invalid") }}
+                      <div class="invalid=feedback">
+                        {% for error in form.username.errors %}   
+                          <span>{{ error }}</span>
+                        {% endfor %}                    
+                      </div> 
+                    {% else %}
+                        {{ form.username(class="form-control form-control-lg") }}  
+                    {% endif %} 
+        </div>-->
+        _________________________________________________________
+' success'and 'danger' bootstrap alert catigorise for  right and wron 
